@@ -1,5 +1,4 @@
 import PyPDF2
-
 def extrair_texto_pdf(caminho_arquivo):
     with open(caminho_arquivo, 'rb') as pdf_file:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
