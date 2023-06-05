@@ -1,4 +1,5 @@
 import streamlit as st
 
 st.title("Olá")
-st.text_input("Qual seu nome?")
+nome = st.text_input("Qual seu nome?")
+idade = st.date_input("Que dia quer pesquisar?")
