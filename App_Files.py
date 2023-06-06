@@ -21,7 +21,8 @@ def extract_text_pdf(file_pdf):
         for page in reader.pages:
             texto += page.extract_text()
     return texto
-    
+
+st.header("Welcome to Extract File :smile:") 
 #Local onde o utilizador irá adicionar o arquivo
 arquivo = st.file_uploader('Insira seu arquivo' , type=['csv', 'xlsx', 'pdf'])
 
