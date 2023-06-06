@@ -1,5 +1,4 @@
 import PyPDF2
-
 def extrair_texto_pdf(caminho_arquivo):
     with open(caminho_arquivo, 'rb') as pdf_file:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -10,8 +9,8 @@ def extrair_texto_pdf(caminho_arquivo):
             texto += page.extract_text()
     return texto
 
-# Solicitar o caminho do arquivo PDF ao usuário
-caminho_arquivo_pdf = input("Digite o caminho para o arquivo PDF: ")
+# Solicitar o caminho do arquivo PDF ao utilizador
+caminho_arquivo_pdf = input("Insira o arquivo", type=['pdf'])
 # Extrair o texto do PDF
 texto_pdf = extrair_texto_pdf(caminho_arquivo_pdf)
 
