@@ -35,7 +35,7 @@ def extract_text_docx(file_txt):
     
 st.header("Welcome to Extract File :smile:") 
 #Local onde o utilizador irá adicionar o arquivo
-arquivo = st.file_uploader('Insira seu arquivo' , type=['csv', 'xlsx', 'pdf', 'txt', 'docx'])
+arquivo = st.file_uploader('Insira seu arquivo:' , type=['csv', 'xlsx', 'pdf', 'txt', 'docx'])
 
 #Utilizei o if para verificar qual tipo de arquivo
 
