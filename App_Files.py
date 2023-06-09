@@ -37,8 +37,9 @@ st.header("Welcome to Extract File :smile:")
 #Local onde o utilizador irá adicionar o arquivo
 arquivo = st.file_uploader('Insira seu arquivo:' , type=['csv', 'xlsx', 'pdf', 'txt', 'docx'])
 
-#Utilizei o if para verificar qual tipo de arquivo
 
+#Aqui foi definido cada MIME para o streamlit reconhecer o tipo de arquivo
+#Utilizei o if para verificar qual tipo de arquivo
 if arquivo is not None:
     if arquivo.type == 'text/csv':
         
@@ -59,7 +60,7 @@ if arquivo is not None:
 else:
   
   st.stop()
-
+#Aqui apresenta o texto extraído no Streamlit
 st.header("O texto extraido foi:")
 st.code(texto)
 
